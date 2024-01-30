@@ -15,10 +15,10 @@ spec:
       containers:
       - name: shipping
    # Add your Artifact Registry container repo here
-        image: <APP REGISTRY>
+        image: ${IMAGE_REPO}
         env:
         - name: INSTANCE_CONNECTION_NAME
-          value: <UPDATE DB INSTANCE_CONNECTION_NAME>
+          value: ${INSTANCE_CONNECTION_NAME}
         - name: DB_USER
           value: evolution
         - name: DB_PASS

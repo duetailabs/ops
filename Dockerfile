@@ -7,7 +7,7 @@ COPY . ./
 RUN pip install -r requirements.txt
 
 # Add these manually for your project
-ENV INSTANCE_CONNECTION_NAME=qwiklabs-gcp-03-d95bf0c32565:us-central1:postgres
+ENV INSTANCE_CONNECTION_NAME=${INSTANCE_CONNECTION_NAME}
 ENV DB_USER=evolution
 ENV DB_PASS=evolution
 ENV DB_NAME=product_details
